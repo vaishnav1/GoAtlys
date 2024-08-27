@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		FEAFBA9C2C7DEDBC0040EE57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEAFBA9B2C7DEDBC0040EE57 /* AppDelegate.swift */; };
 		FEAFBA9E2C7DEDBC0040EE57 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEAFBA9D2C7DEDBC0040EE57 /* SceneDelegate.swift */; };
-		FEAFBAA02C7DEDBD0040EE57 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEAFBA9F2C7DEDBC0040EE57 /* ViewController.swift */; };
 		FEAFBAA32C7DEDBD0040EE57 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = FEAFBAA22C7DEDBD0040EE57 /* Base */; };
 		FEAFBAA52C7DEDBE0040EE57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEAFBAA42C7DEDBE0040EE57 /* Assets.xcassets */; };
 		FEAFBAA82C7DEDBE0040EE57 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = FEAFBAA72C7DEDBE0040EE57 /* Base */; };
+		FEAFBAB12C7E0ECF0040EE57 /* CarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEAFBAB02C7E0ECF0040EE57 /* CarouselView.swift */; };
+		FEAFBAB32C7E0F1C0040EE57 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEAFBAB22C7E0F1C0040EE57 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FEAFBA982C7DEDBC0040EE57 /* Go Atlys.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Go Atlys.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEAFBA9B2C7DEDBC0040EE57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FEAFBA9D2C7DEDBC0040EE57 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FEAFBA9F2C7DEDBC0040EE57 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FEAFBAA22C7DEDBD0040EE57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FEAFBAA42C7DEDBE0040EE57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FEAFBAA72C7DEDBE0040EE57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FEAFBAA92C7DEDBE0040EE57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FEAFBAB02C7E0ECF0040EE57 /* CarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselView.swift; sourceTree = "<group>"; };
+		FEAFBAB22C7E0F1C0040EE57 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +60,22 @@
 			children = (
 				FEAFBA9B2C7DEDBC0040EE57 /* AppDelegate.swift */,
 				FEAFBA9D2C7DEDBC0040EE57 /* SceneDelegate.swift */,
-				FEAFBA9F2C7DEDBC0040EE57 /* ViewController.swift */,
+				FEAFBAAF2C7E0EC00040EE57 /* Views */,
 				FEAFBAA12C7DEDBD0040EE57 /* Main.storyboard */,
 				FEAFBAA42C7DEDBE0040EE57 /* Assets.xcassets */,
 				FEAFBAA62C7DEDBE0040EE57 /* LaunchScreen.storyboard */,
 				FEAFBAA92C7DEDBE0040EE57 /* Info.plist */,
 			);
 			path = "Go Atlys";
+			sourceTree = "<group>";
+		};
+		FEAFBAAF2C7E0EC00040EE57 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FEAFBAB02C7E0ECF0040EE57 /* CarouselView.swift */,
+				FEAFBAB22C7E0F1C0040EE57 /* LoginViewController.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +149,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FEAFBAA02C7DEDBD0040EE57 /* ViewController.swift in Sources */,
+				FEAFBAB32C7E0F1C0040EE57 /* LoginViewController.swift in Sources */,
 				FEAFBA9C2C7DEDBC0040EE57 /* AppDelegate.swift in Sources */,
+				FEAFBAB12C7E0ECF0040EE57 /* CarouselView.swift in Sources */,
 				FEAFBA9E2C7DEDBC0040EE57 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
