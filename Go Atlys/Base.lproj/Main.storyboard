@@ -11,34 +11,26 @@
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LoginViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="LoginViewController" customModule="Go_Atlys" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7FA-kC-uIP">
-                                <rect key="frame" x="75" y="368" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xlr-MT-HU3">
-                                <rect key="frame" x="0.0" y="246" width="390" height="250"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xlr-MT-HU3" customClass="CarouselView" customModule="Go_Atlys" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="133.33333333333337" width="390" height="250"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="250" id="cpu-Eg-0Fy"/>
+                                    <constraint firstAttribute="height" constant="250" id="VpM-Rm-8H3"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tch-oV-bw9">
-                                <rect key="frame" x="174" y="97" width="42" height="133"/>
+                                <rect key="frame" x="174.33333333333334" y="97" width="41.333333333333343" height="20.333333333333329"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qPa-K0-FLI">
-                                <rect key="frame" x="174" y="520" width="42" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="x1C-in-C8w"/>
-                                </constraints>
+                                <rect key="frame" x="174.33333333333334" y="407.33333333333331" width="41.333333333333343" height="20.333333333333314"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -50,17 +42,19 @@
                             <constraint firstItem="xlr-MT-HU3" firstAttribute="top" secondItem="tch-oV-bw9" secondAttribute="bottom" constant="16" id="K4Q-le-U2x"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xlr-MT-HU3" secondAttribute="trailing" id="QOU-Lg-dAj"/>
                             <constraint firstItem="tch-oV-bw9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WCs-de-XNq"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="qPa-K0-FLI" secondAttribute="bottom" constant="269" id="Z7B-Vl-ARB"/>
                             <constraint firstItem="qPa-K0-FLI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bOA-lS-9zk"/>
                             <constraint firstItem="tch-oV-bw9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="bs1-9Z-1Gs"/>
                             <constraint firstItem="xlr-MT-HU3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qSm-so-dTC"/>
                             <constraint firstItem="qPa-K0-FLI" firstAttribute="top" secondItem="xlr-MT-HU3" secondAttribute="bottom" constant="24" id="uVP-db-SfW"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="carouselView" destination="xlr-MT-HU3" id="wcG-zr-tCf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="140" y="3.5545023696682461"/>
+            <point key="canvasLocation" x="140" y="6"/>
         </scene>
     </scenes>
     <resources>
